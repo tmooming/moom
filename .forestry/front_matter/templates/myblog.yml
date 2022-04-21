@@ -1,0 +1,44 @@
+---
+label: myblog
+hide_body: false
+fields:
+- name: title
+  type: text
+  config:
+    required: false
+  label: title
+  description: 标题
+  hidden: false
+- name: date
+  type: datetime
+  label: date
+  description: 日期
+  config:
+    required: false
+    date_format: 
+    time_format: 
+    display_utc: false
+- name: tags
+  type: tag_list
+  default: []
+  label: tags
+  description: 文章标签
+- name: categories
+  type: tag_list
+  default: []
+  label: categories
+  description: 文章类别
+- name: summary
+  type: text
+  config:
+    required: false
+  label: summary
+  description: 文章总结
+- name: description
+  type: text
+  config:
+    required: false
+  label: description
+  description: 摘要
+pages:
+- content/about.md
